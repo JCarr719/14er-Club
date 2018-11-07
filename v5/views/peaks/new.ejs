@@ -1,0 +1,25 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <div class="row">
+    <h1 style="text-align: center;">Add a Fourteener Experience!</h1>
+            <div style="width: 30%; margin: 75px auto;">
+            <form action="/peaks" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="name" placeholder="Which peak?">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="image" placeholder="Post a picture(enter URL)">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="description" placeholder="Describe your experience...">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-default btn-success btn-block">Submit</button>
+                </div>
+            </form>
+                <a href="/peaks">Go Back</a>
+            </div>
+    </div>
+</div>
+<% include ../partials/footer %>

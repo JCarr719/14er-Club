@@ -1,0 +1,13 @@
+<% include partials/header %>
+<h1><%= peak.name %></h1>
+
+<img src=" <%= peak.image %>">
+
+<p> <%= peak.description %> </p>
+
+<% peak.comments.forEach(function(comment){ %>
+    <p>
+        <strong></strong><%= comment.author %></strong> - <%= comment.text %>
+    </p>
+<% }); %>
+<% include partials/footer %>
