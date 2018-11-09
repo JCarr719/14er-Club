@@ -16,7 +16,9 @@ var express        = require('express'),
         peakRoutes    = require('./routes/peaks'),
         indexRoutes   = require('./routes/index');
     
-mongoose.connect('mongodb://localhost:27017/colorado14_v12', { useNewUrlParser: true });
+// mongoose.connect('mongodb://localhost:27017/colorado14_v12', { useNewUrlParser: true });
+mongoose.connect('mongodb://JCarr719:L0vecraft@ds155213.mlab.com:55213/14erclub', { useNewUrlParser: true });
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
